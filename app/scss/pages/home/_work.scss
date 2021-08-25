@@ -1,0 +1,62 @@
+.work {
+    margin-bottom: 101px;
+    @include respond-to(tablet-portrait) {
+        margin-bottom: 20px;;
+    }
+    &__title {
+        margin-bottom: 60px;
+        @include respond-to(tablet-portrait) {
+            margin-bottom: 20px;;
+        }
+    }
+    &__items {
+        margin-right: -56px;
+        @include respond-to(tablet-portrait) {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 0;
+        }
+    }
+    &__item {
+        padding-right: 56px;
+        position: relative;
+        @include respond-to(tablet-portrait) {
+            margin-bottom: 10px;
+            padding-right: 10px;
+            max-width: 350px;
+        }
+        &-img {
+            max-width: 64px;
+            margin-bottom: 29px;
+        }
+        &-title {
+            font-family:$o-font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: $color-mine-shaft;
+            margin-bottom: 30px;
+        }
+        &-text {
+            font-family:$o-font-regular;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 24px;
+            background-image: url(../assets/images/arrow-grey.svg);
+            background-repeat: no-repeat;
+            top: 25px;
+            right: 15px;
+            @include respond-to(tablet-portrait) {
+                display: none;
+            }
+        } 
+        &:last-child::after {
+            display: none;
+            padding-right: 0;
+        }
+    }
+}

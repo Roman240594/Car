@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>LogoAuto</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__content flex flex_space-between flex_align-end">
+                    <a href="index.html"><img class="logo header__logo" src="assets/images/LOGOAuto.png" alt="logo"></a>
+                    <nav class="nav header__nav">
+                        <ul class="nav__items flex flex_space-between">
+                            <li class="nav__item"><a class="nav__item-link" href="index.html">Home</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">About us</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="shop.html">Shop</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">Blog</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">Contacts</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">How it Works</a></li>
+                        </ul>
+                    </nav>
+                    <div class="auth-block">
+                        <a class="button auth-block__button" href="login.html">Login</a>
+                        <a class="button auth-block__button" href="register.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside class="aside">
+            <form class="form" action="#" method="get">
+                <div class="aside__price">
+                    <h5 class="title aside__title aside__title-after">Price</h5>
+                    <div class="aside__price-content flex flex_space-between">
+                        <div>
+                            <p class="aside__price-title">Min</p>
+                            <input class="form__item aside__price-form aside__price-form_left" type="number" min="0"
+                                name="min-price" placeholder="0" required>
+                        </div>
+                        <div class="aside__price-dash">-</div>
+                        <div>
+                            <p class="aside__price-title">Max</p>
+                            <input class="form__item aside__price-form" type="number" min="1" name="max-price"
+                                placeholder="0" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside__brands">
+                    <h5 class="title aside__title aside__title-after">Brands</h5>
+                    <ul class="aside__brands-items">
+                        <li class="aside__brands-item"><input class="aside__brands-input" type="checkbox"
+                                id="toyota"><label class="aside__brands-label" for="toyota">Toyota</label>
+                        </li>
+                        <li class="aside__brands-item"><input class="aside__brands-input" type="checkbox"
+                                id="ford"><label class="aside__brands-label" for="ford">Ford</label>
+                        </li>
+                        <li class="aside__brands-item"><input class="aside__brands-input" type="checkbox"
+                                id="audi"><label class="aside__brands-label" for="audi">Audi</label>
+                        </li>
+                        <li class="aside__brands-item"><input class="aside__brands-input" type="checkbox"
+                                id="bmw"><label class="aside__brands-label" for="bmw">BMW</label>
+                        </li>
+                        <li class="aside__brands-item"><input class="aside__brands-input" type="checkbox"
+                                id="nissan"><label class="aside__brands-label" for="nissan">Nissan</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="aside__search">
+                    <h5 class="title aside__title">Search</h5>
+                    <input class="aside__search-name" type="text" placeholder="Search by name...">
+                </div>
+            </form>
+            <div class="aside__contacts">
+                <h5 class="title aside__title">Contacts Details</h5>
+                <div class="aside__contacts-item">
+                    <a class="aside__contacts-link aside__contacts-tel" href="tel:8793329375">Phone:
+                        879-332-9375</a>
+                </div>
+                <div class="aside__contacts-item">
+                    <a class="aside__contacts-link aside__contacts-mail" href="mailto:Email: info@pixsellz.io">Email:
+                        info@pixsellz.io</a>
+                </div>
+                <div class="aside__contacts-item">
+                    <a class="aside__contacts-link aside__contacts-location" href="#">Adress: 456 Hagenes Gardens
+                        Suite
+                        808</a>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section class="shop__content">
+                <h1 class="title title_big shop__title">
+                    Our shop</h1>
+                <div class="shop__items flex flex_wrap ">
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-audi.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title title_red shop__price">
+                                    $8588 <span class="shop__price_old">$15000</span>
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-bugatti.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title shop__price">
+                                    $8588
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-audi.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title title_red shop__price">
+                                    $8588 <span class="shop__price_old">$15000</span>
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-ford.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title title_red shop__price">
+                                    $8588 <span class="shop__price_old">$15000</span>
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-porshe.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title shop__price">
+                                    $8588
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-bugatti.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title title_red shop__price">
+                                    $8588 <span class="shop__price_old">$15000</span>
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-ford.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title title_red shop__price">
+                                    $8588 <span class="shop__price_old">$15000</span>
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-audi.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title shop__price">
+                                    $8588
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shop__box">
+                        <div class="shop__item">
+                            <img class="shop__img" src="assets/images/product-porshe.jpg" alt="audi">
+                            <div class="shop__content">
+                                <h5 class="title shop__title">
+                                    2020 Audi S5 Coupe
+                                </h5>
+                                <p class="title title_red shop__price">
+                                    $8588 <span class="shop__price_old">$15000</span>
+                                </p>
+                                <p class="shop__text">
+                                    Available at your store
+                                </p>
+                                <div class="shop__button text-center">
+                                    <a class="shop__button-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <nav class="pagination flex flex_center flex_align-center">
+                    <ul class="pagination__list flex">
+                        <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                        <li class="pagination__item pagination__dots">...</li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
+                    </ul><a class="pagination__link pagination__btn" href="#">Next</a>
+                </nav>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner flex flex_space-between">
+                    <a href="#"><img class="logo footer__logo" src="assets/images/Logo-footer.png" alt="logo"></a>
+                    <nav class="nav">
+                        <ul class="nav__items flex flex_space-between footer__nav">
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">Home</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">About
+                                    us</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer"
+                                    href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">Blog</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">Contacts</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">How it
+                                    Works</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

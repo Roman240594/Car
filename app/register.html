@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>LogoAuto</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__content flex flex_space-between flex_align-end">
+                    <a href="#"><img class="logo header__logo" src="assets/images/LOGOAuto.png" alt="logo"></a>
+                    <nav class="nav header__nav">
+                        <ul class="nav__items flex flex_space-between">
+                            <li class="nav__item"><a class="nav__item-link" href="index.html">Home</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">About us</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="shop.html">Shop</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">Blog</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">Contacts</a></li>
+                            <li class="nav__item"><a class="nav__item-link" href="#">How it Works</a></li>
+                        </ul>
+                    </nav>
+                    <div class="auth-block">
+                        <a class="button auth-block__button" href="login.html">Login</a>
+                        <a class="button auth-block__button" href="register.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="tabs">
+                    <ul class="tabs__nav flex flex_center">
+                        <li class="tabs__item">
+                            <a class="tabs__link" href="#login">Login</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a class="tabs__link tabs__link--active" href="#register">Register</a>
+                        </li>
+                        <li class="tabs__devider"></li>
+                    </ul>
+                    <div class="tabs__body">
+                        <div class="tabs__content" id="register">
+                            <div class="tabs__title text-center">Create an Account</div>
+                            <form class="flex flex_center" action="#" method="POST">
+                                <div class="form__login">
+                                    <div class="form__name flex flex_center">
+                                        <div class="form__controls">
+                                            <label class="form__login-title" for="name">First Name</label>
+                                            <input class="form__input form__input-50" id="name" minlength="2"
+                                                type="text" name="Username" required>
+                                        </div>
+                                        <div class="form__controls">
+                                            <label class="form__login-title" for="last-name">Last Name</label>
+                                            <input class="form__input form__input-50" id="last-name" minlength="2"
+                                                type="text" name="Userlastname" required>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex_center">
+                                        <div class="form__controls">
+                                            <label class="form__login-title" for="mail">E-mail</label>
+                                            <input class="form__input form__input_register" id="mail" minlength="5"
+                                                type="email" name="Username" required>
+                                        </div>
+                                    </div>
+                                    <div class="form__controls flex">
+                                        <label class="form__login-title form__gender" for="male"><input
+                                                class="form__gender_radio" id="male" checked type="radio" name="gender"
+                                                value="male">Male
+                                        </label>
+                                        <label class="form__login-title form__gender" for="female"><input
+                                                class="form__gender_radio" id="female" type="radio" name="gender"
+                                                value="male">FeMale
+                                        </label>
+                                    </div>
+                                    <div class="form__password flex flex_center">
+                                        <div class="form__controls">
+                                            <label class="form__login-title" for="password">Password</label>
+                                            <input class="form__input form__input-50" id="password" required
+                                                type="password" name="Password">
+                                        </div>
+                                        <div class="form__controls">
+                                            <label class="form__login-title" for="confirm-password">Confirm Password
+                                            </label>
+                                            <input class="form__input form__input-50" id="confirm-password" required
+                                                type="password" name="confirm_password">
+                                        </div>
+                                    </div>
+                                    <div class="form__controls form__controls-submit text-center">
+                                        <button type="submit" class="form__button">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="form__info text-center">
+                                By clicking the 'Sign Up' button, you confirm that you accept our
+                                <a class="form__info-link" href="#">Terms of Use</a> and <a class="form__info-link"
+                                    href="#">Privacy Policy</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner flex flex_space-between">
+                    <a href="#"><img class="logo footer__logo" src="assets/images/Logo-footer.png" alt="logo"></a>
+                    <nav class="nav">
+                        <ul class="nav__items flex flex_space-between footer__nav">
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">Home</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">About
+                                    us</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer"
+                                    href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">Blog</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">Contacts</a>
+                            </li>
+                            <li class="nav__item"><a class="nav__item-link nav__item-link-footer" href="#">How it
+                                    Works</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

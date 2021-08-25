@@ -1,0 +1,160 @@
+.aside {
+    width: 270px;
+    margin: 0 29px;
+    float: left;
+    @include respond-to(tablet-landscape) {
+        margin: 0 auto;
+        float: initial;
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-charade;
+        margin-bottom: 10px;
+        &-after {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                border: 5px solid transparent; 
+                border-bottom: 5px solid $color-black;
+                top: 2px;
+                right: 0;
+            }
+        }
+    }
+    &__price {
+        margin-bottom: 26px;
+        &-content {
+            @include respond-to(desktop) {
+                flex-wrap: wrap;
+            }
+        }
+        &-title {
+            font-family: $o-font-regular, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: $color-dusty-grey;
+            margin-bottom: 6px;
+        }
+        &-dash {
+            padding: 0 11px;
+            position: relative;
+            top: 30px;
+        }
+    }
+    &__brands {
+        margin-bottom: 28px;
+        &-input {
+            width: 20px;
+            height: 20px;
+        }
+        &-label {
+            font-family: $o-font-regular, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            color: $color-mine-shaft;
+            padding-left: 8px;
+            width: 168px;
+            margin-right: 7px;
+            cursor: pointer;
+            position: relative;
+            bottom: 4px;
+        }
+    }
+    &__search-name {
+        width: 100%;
+        height: 37px;
+        resize: none;
+        border-radius: 5px;
+        border: 1px solid $color-dusty-grey;
+        padding: 6px 10px 7px;
+        font-family: $i-font-light,sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-dusty-grey;
+    }
+    &__contacts {
+        @include respond-to(tablet-landscape) {
+            padding: 0 30px;
+        }
+        &-item {
+            padding-left: 50px;
+            margin-bottom: 18px;
+            position: relative;
+        }
+        &-link {
+            font-family: $o-font-600, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: $color-charade;
+        }
+        &-tel::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            background-image: url(../assets/icons/tel.svg);
+            top: 0;
+            left: 0;
+        }
+        &-mail::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            background-image: url(../assets/icons/mail.svg);
+            top: 0;
+            left: 0;
+        }
+        &-location::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            background-image: url(../assets/icons/location.svg);
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.form{
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 27px 20px 30px;
+    margin-bottom: 27px;
+    @include respond-to(tablet-landscape) {
+        margin-right: 15px;
+    }
+    &__item {
+        font-family: $o-font-regular, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-dusty-grey;
+        margin-bottom: 6px;
+        padding: 6px 10px 7px;
+        border: 1px solid $color-dusty-grey;
+        border-radius: 5px;
+        width: 84px;
+        height: 35px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__name {
+        @include respond-to(tablet-portrait) {
+            display: inline;
+        }
+    }
+}

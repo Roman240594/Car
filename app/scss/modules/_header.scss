@@ -1,0 +1,55 @@
+.header {
+    margin-bottom: 48px;
+    padding: 12px 0;
+    @include respond-to(tablet-portrait) {
+        margin-bottom: 0;
+    }
+    &__logo {
+        max-width: 137px;
+        @include respond-to(desktop) {
+            margin-bottom: 10px;
+        }
+        @include respond-to(tablet-landscape) {
+            max-width: 100px;
+        }
+    }
+    &__content {
+        @include respond-to(desktop) {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.nav {
+    &__item {
+        padding: 0 14px;
+        @include respond-to(desktop) {
+            margin-bottom: 10px;;
+        }
+        @include respond-to(tablet-landscape) {
+            padding: 0 5px;
+        }
+        &-link {
+            font-family: $o-font-600, sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 19px;
+            color: $color-charade;
+            transition: all 1s;
+            &:focus {
+                font-family: $o-font-bold, sans-serif;
+            }
+            @include respond-to(phone-only) {
+                font-size: 10px;
+            }
+            &-footer {
+                color: $color-white;
+                transition: all .5s;
+                &:focus {
+                    font-family: $o-font-bold, sans-serif;
+                }
+            }
+        }
+    }
+}

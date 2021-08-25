@@ -1,0 +1,37 @@
+.banner {
+    margin-bottom: 277px;
+    @include respond-to(tablet-landscape) {
+        margin-bottom: 100px;;
+    }
+    &__title {
+        max-width: 440px;
+        margin-bottom: 33px;
+        @include respond-to(tablet-landscape) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+    &__content{
+        &-img {
+            bottom: -70px;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 882px;
+        @include respond-to(desktop) {
+            width: 670px;
+        }
+        @include respond-to(tablet-landscape) {
+            width: 420px;
+        }
+        @include respond-to(tablet-portrait) {
+            width: 300px;
+        }
+        @include respond-to(phone-only) {
+            display: none;
+        }
+    }
+}
